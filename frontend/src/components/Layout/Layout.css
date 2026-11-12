@@ -1,0 +1,15 @@
+.layout-container {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-sandstone-bg);
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.layout-main {
+  flex: 1 0 auto;
+  min-height: calc(100dvh - 68px - 32px);
+}
+
+

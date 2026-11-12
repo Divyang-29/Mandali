@@ -1,0 +1,132 @@
+.market-page-wrapper {
+  background-color: var(--color-sandstone-bg);
+  min-height: 100dvh;
+  padding: 32px 16px 64px;
+}
+
+@media (min-width: 481px) {
+  .market-page-wrapper {
+    padding: 40px 20px 80px;
+  }
+}
+
+.market-page-container {
+  max-width: var(--max-width-site);
+  margin: 0 auto;
+}
+
+.market-breadcrumb {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.market-breadcrumb a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.market-breadcrumb a:hover {
+  color: var(--color-midnight);
+  text-decoration: underline;
+}
+
+/* Tier 1, 2, 3: Mobile & Tablet (< 1024px) - Stacked Layout */
+.market-editorial-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+/* Tier 4: Desktop & Wide (1024px+) - Sticky Left Metadata Rail */
+@media (min-width: 1024px) {
+  .market-editorial-layout {
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+  }
+}
+
+/* Sticky Metadata Rail */
+.market-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .market-rail {
+    position: sticky;
+    top: 96px;
+  }
+}
+
+.market-article {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 28px 20px;
+  box-shadow: var(--shadow-hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+@media (min-width: 640px) {
+  .market-article {
+    padding: 48px 44px;
+  }
+}
+
+/* Structured Architectural Data Table */
+.editorial-data-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin: 16px 0;
+}
+
+
+.editorial-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.editorial-data-table th {
+  background-color: var(--color-sandstone-bg);
+  padding: 12px 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: var(--color-midnight);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.editorial-data-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-sandstone-surface);
+  color: var(--color-text-primary);
+}
+
+.editorial-data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.editorial-data-table tr:nth-child(even) {
+  background-color: #FAFAF9;
+}
+
+.table-stat-value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-midnight);
+  font-variant-numeric: tabular-nums;
+}

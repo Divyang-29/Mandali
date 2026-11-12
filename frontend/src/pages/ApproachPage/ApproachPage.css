@@ -1,0 +1,104 @@
+.approach-page-wrapper {
+  background-color: var(--color-sandstone-bg);
+  min-height: 100dvh;
+  padding: 32px 16px 64px;
+}
+
+@media (min-width: 481px) {
+  .approach-page-wrapper {
+    padding: 40px 20px 80px;
+  }
+}
+
+.approach-page-container {
+  max-width: var(--max-width-site);
+  margin: 0 auto;
+}
+
+.approach-breadcrumb {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.approach-breadcrumb a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.approach-breadcrumb a:hover {
+  color: var(--color-midnight);
+  text-decoration: underline;
+}
+
+/* Tier 1, 2, 3: Mobile & Tablet (< 1024px) - Stacked Layout */
+.approach-editorial-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+/* Tier 4: Desktop & Wide (1024px+) - Sticky Left Metadata Rail */
+@media (min-width: 1024px) {
+  .approach-editorial-layout {
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+  }
+}
+
+/* Sticky Metadata Rail */
+.approach-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .approach-rail {
+    position: sticky;
+    top: 96px;
+  }
+}
+
+.approach-article {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 28px 20px;
+  box-shadow: var(--shadow-hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+@media (min-width: 640px) {
+  .approach-article {
+    padding: 48px 44px;
+  }
+}
+
+
+.phase-roadmap-node {
+  padding: 22px 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-sandstone-surface);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.phase-tag-badge {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+  align-self: flex-start;
+}

@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "skills": {
+    "ai-council": {
+      "source": "mugenGH/ai-council",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "d1b9b368e3cbecfafe13ccdb0c4331b38fc4dd261633cc4abc2e2c2df30ab21c"
+    },
+    "anti-ai-design": {
+      "source": "local",
+      "sourceType": "project",
+      "skillPath": "SKILL.md",
+      "version": "1.0.0"
+    }
+  }
+}

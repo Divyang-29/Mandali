@@ -1,0 +1,214 @@
+.waitlist-section {
+  padding: 80px 20px;
+  background-color: white;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.waitlist-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.waitlist-header {
+  text-align: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.waitlist-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #E8EEF5;
+  color: var(--color-midnight-light);
+  border-radius: var(--radius-full);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.waitlist-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-midnight);
+  line-height: 1.2;
+}
+
+.waitlist-subtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.waitlist-form-card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 480px) {
+  .waitlist-form-card {
+    padding: 24px 18px;
+  }
+}
+
+.form-grid-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 520px) {
+  .form-grid-two {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: var(--color-text-primary);
+  background-color: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  outline: none;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-color: var(--color-midnight);
+  box-shadow: 0 0 0 1px var(--color-midnight);
+}
+
+.role-radio-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+@media (min-width: 480px) {
+  .role-radio-group {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.role-radio-btn {
+  padding: 10px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: white;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+}
+
+.role-radio-btn.selected {
+  background-color: #E8EEF5;
+  border-color: var(--color-midnight);
+  color: var(--color-midnight);
+  font-weight: 600;
+}
+
+.btn-submit-waitlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+  background-color: var(--color-midnight);
+  color: white;
+  border: 1px solid var(--color-midnight);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-submit-waitlist:hover {
+  background-color: var(--color-midnight-light);
+}
+
+.waitlist-compliance {
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.waitlist-compliance a {
+  text-decoration: underline;
+  color: var(--color-midnight);
+}
+
+.waitlist-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.waitlist-success-state {
+  text-align: center;
+  padding: 36px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.waitlist-success-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: rgba(5, 150, 105, 0.1);
+  color: var(--color-emerald);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waitlist-success-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-midnight);
+  margin-bottom: 6px;
+}
+
+.waitlist-success-text {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+

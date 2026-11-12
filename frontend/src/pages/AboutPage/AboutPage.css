@@ -1,0 +1,311 @@
+.about-page-wrapper {
+  background-color: var(--color-sandstone-bg);
+  min-height: 100dvh;
+  padding: 32px 16px 64px;
+}
+
+@media (min-width: 481px) {
+  .about-page-wrapper {
+    padding: 40px 20px 80px;
+  }
+}
+
+.about-page-container {
+  max-width: var(--max-width-site);
+  margin: 0 auto;
+}
+
+.about-breadcrumb {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-breadcrumb a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.about-breadcrumb a:hover {
+  color: var(--color-midnight);
+  text-decoration: underline;
+}
+
+/* Tier 1, 2, 3: Mobile & Tablet (< 1024px) - Stacked Layout */
+.about-editorial-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+/* Tier 4: Desktop & Wide (1024px+) - Sticky Left Metadata Rail */
+@media (min-width: 1024px) {
+  .about-editorial-layout {
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+  }
+}
+
+/* Left Sticky Metadata Rail */
+.about-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .about-rail {
+    position: sticky;
+    top: 96px;
+  }
+}
+
+.rail-card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rail-kicker {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-saffron-dark);
+}
+
+.rail-meta-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.rail-meta-list li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-sandstone-bg);
+  padding-bottom: 4px;
+}
+
+.rail-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.rail-toc-list a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  display: block;
+  padding: 4px 0;
+  transition: color 0.15s ease;
+}
+
+.rail-toc-list a:hover {
+  color: var(--color-midnight);
+  font-weight: 600;
+}
+
+.rail-action-box {
+  background-color: var(--color-sandstone-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  font-size: 13px;
+}
+
+.rail-action-box h4 {
+  font-size: 13px;
+  margin: 0 0 4px;
+  color: var(--color-midnight);
+}
+
+.rail-action-box p {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin: 0 0 10px;
+}
+
+/* Right Editorial Column */
+.about-article {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: 28px 20px;
+  box-shadow: var(--shadow-hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+@media (min-width: 640px) {
+  .about-article {
+    padding: 48px 44px;
+  }
+}
+
+.article-header {
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.article-eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-saffron-dark);
+}
+
+.article-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--color-midnight);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+@media (min-width: 640px) {
+  .article-title {
+    font-size: 40px;
+  }
+}
+
+.article-lead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.editorial-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--color-text-primary);
+}
+
+.editorial-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-midnight);
+  letter-spacing: -0.02em;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 8px;
+}
+
+.editorial-pull-quote {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--color-midnight);
+  border-left: 3px solid var(--color-midnight);
+  padding: 12px 0 12px 20px;
+  margin: 12px 0;
+  background-color: var(--color-sandstone-bg);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.feature-launch-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-launch-item {
+  padding: 14px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-sandstone-surface);
+  font-size: 14px;
+}
+
+.founder-editorial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background-color: var(--color-sandstone-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+@media (min-width: 540px) {
+  .founder-editorial-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.founder-avatar-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-midnight);
+  color: var(--color-saffron-light);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.article-subpage-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+@media (min-width: 600px) {
+  .article-subpage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.subpage-card-link {
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: all 0.15s ease;
+}
+
+.subpage-card-link:hover {
+  border-color: #94A3B8;
+  background-color: var(--color-sandstone-surface);
+}

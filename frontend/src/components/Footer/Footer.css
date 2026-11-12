@@ -1,0 +1,146 @@
+.footer-wrapper {
+  background-color: var(--color-midnight-dark);
+  color: #D1D5DB;
+  padding: 48px 16px calc(32px + env(safe-area-inset-bottom, 0px));
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (min-width: 481px) {
+  .footer-wrapper {
+    padding: 56px 20px calc(36px + env(safe-area-inset-bottom, 0px));
+  }
+}
+
+.footer-container {
+  max-width: var(--max-width-site);
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  margin-bottom: 48px;
+}
+
+@media (min-width: 640px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+    gap: 48px;
+  }
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-brand-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-motto {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  color: var(--color-saffron-light);
+  font-size: 14px;
+}
+
+.footer-desc {
+  font-size: 13px;
+  color: #9CA3AF;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.footer-logo-img {
+  height: 28px;
+  width: auto;
+}
+
+.footer-contact-note {
+  font-size: 12px;
+  color: #9CA3AF;
+}
+
+.footer-contact-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact-link:hover {
+  text-decoration: underline;
+}
+
+.footer-col-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #9CA3AF;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.footer-links a {
+  color: #D1D5DB;
+  transition: color 0.15s ease;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 12px;
+  color: #6B7280;
+}
+
+@media (min-width: 640px) {
+  .footer-bottom {
+    flex-direction: row;
+  }
+}
+
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-legal-links a:hover {
+  color: white;
+}
+
