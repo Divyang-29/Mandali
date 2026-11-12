@@ -98,3 +98,4 @@ npm run build
 - **Apple HIG & Android Ergonomics:** Minimum 44px touch targets on coarse pointer devices.
 - **iOS Safari Auto-Zoom Prevention:** Form inputs and selects locked to `>= 16px` on mobile viewports.
 - **4-Tier Breakpoints:** Small Mobile (320px–480px), Large Mobile (481px–767px), Tablet (768px–1023px), and Desktop/Wide (1024px+).
+
